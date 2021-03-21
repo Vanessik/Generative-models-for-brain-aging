@@ -1,5 +1,5 @@
 # Generative-models-for-brain-aging-and-gender-differences
-Project devoted to studying interpretability of latent representations, derived from MRI brain data.
+Project devoted to understanding healthy patterns of brain data, connected to gender and age.
 
 ## Prerequisites
 
