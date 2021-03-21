@@ -27,10 +27,10 @@ Google Colab GPU is enough to run each experiment. Main prerequisites are:
 
 - ```./Autoencoder experiments/trained_models/autoencoder_morph ``` -- trained on morphometry data __Autoencoder__;
 - ```./Autoencoder experiments/trained_models/autoencoder_mri ``` -- trained on MRI data __Autoencoder__;
-- ```./GAN experiment/models/discriminator_checkpoint.pth ``` -- trained on MRI data __Discriminator__ model;
-- ```./GAN experiment/models/encoder_checkpoint.pth``` -- trained on MRI data __Encoder__;
 - ```./GAN experiment/models/gender_classifier_checkpoint.pth ``` -- trained on MRI data __Classifier__ ;
 - ```./GAN experiment/models/generative_checkpoint.pth ``` -- trained on MRI data __Generator__;
+- ```./GAN experiment/models/discriminator_checkpoint.pth ``` -- trained on MRI data __Discriminator__ model;
+- ```./GAN experiment/models/encoder_checkpoint.pth``` -- trained on fake MRI data and latent representations __Encoder__;
 
 
 ## Data
@@ -108,7 +108,7 @@ Logistic regression was trained on initial data, reshaped to 2D and on latent ve
 Generated images and corresponding latent representations can be found by the following links: https://drive.google.com/file/d/115XMMUh4U4OP_FB_cImRwVVDpzAikdh1/view?usp=sharing and https://drive.google.com/file/d/115xUwUxlgzJahS53WxOzRH-_wDcOWDtn/view?usp=sharing
 
 
-- T__Encoder__ on generated data to fit latent representations of size 100.
+- __Encoder__ on generated data to fit latent representations of size 100.
 
 MSE on validation: 0.003 (standard deviation of generator's distribution approximately equals to 0.3)
 
