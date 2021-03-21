@@ -1,5 +1,5 @@
-# Generative-models-for-brain-aging
-Exploring brain MRI: generative models for brain aging
+# Generative-models-for-brain-aging-and-gender-differences
+Project devoted to studying interpretability of latent representations, derived from MRI brain data.
 
 ## Prerequisites
 
@@ -101,15 +101,18 @@ Logistic regression was trained on initial data, reshaped to 2D and on latent ve
       
 - __Generative adversarial model__ 
 
-2a Trained GAN with 100 dimensional latent space.
+- __GAN__ with 100 dimensional latent space.
 
-Generated images and corresponding latent representations can be found by the following liks: https://drive.google.com/file/d/115XMMUh4U4OP_FB_cImRwVVDpzAikdh1/view?usp=sharing and https://drive.google.com/file/d/115xUwUxlgzJahS53WxOzRH-_wDcOWDtn/view?usp=sharing
+![Alt-текст](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/GAN_fake_slices.png "Generated brains")
 
-2b Trained encoder on generated data to fit latent representations of size 100.
+Generated images and corresponding latent representations can be found by the following links: https://drive.google.com/file/d/115XMMUh4U4OP_FB_cImRwVVDpzAikdh1/view?usp=sharing and https://drive.google.com/file/d/115xUwUxlgzJahS53WxOzRH-_wDcOWDtn/view?usp=sharing
 
-MSE on validation: 0.003 (std of generator's distribution approximately equals to 0.3)
 
-2c Classification for gender (more complex model)
+- T__Encoder__ on generated data to fit latent representations of size 100.
+
+MSE on validation: 0.003 (standard deviation of generator's distribution approximately equals to 0.3)
+
+- __Classification for gender__ (more complex model)
 
 ResNet-like neural network reached 94.6% accuracy on validation without augmentation and 93% with augmentation by gaussian noise. However, classificators trained on neither augmented nor original dataset didn't show reasunable predictions for synthetic dataset. So, the continuation of the experiment was meaningless.
 
