@@ -98,10 +98,9 @@ Logistic regression was trained on initial data, reshaped to 2D and on latent ve
 | Age| 0.439 | 0.439 |
 
 
-      
-- __Generative adversarial model__ 
+       
 
-- __GAN__ with 100 dimensional latent space.
+- __Generative adversarial model__ with 100 dimensional latent space.
 
 ![Alt-текст](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/GAN_fake_slices.png "Generated brains")
 
