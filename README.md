@@ -1,16 +1,17 @@
 # Generative-models-for-brain-aging-and-gender-differences
 Project devoted to understanding healthy patterns of brain data, connected to gender and age.
 
+The main goal of this project is to explore brain with generative models and derive aging and gender patterns both on morphometry and full size MRI data. 
+The motivation of this is to facilitate work of scientist with understanding which areas of brain have deviations and which - are the result of natural biological changes due to aging or  gender affiliation.
+
 ## Prerequisites
 
 Google Colab GPU is enough to run each experiment. Main prerequisites are:
 
 1. pytorch
 2. CUDA
-
-## Repository structure
-
-
+3. BrainPainter 
+https://github.com/razvanmarinescu/brain-coloring
 
 
 ## Experiments
@@ -19,9 +20,6 @@ Google Colab GPU is enough to run each experiment. Main prerequisites are:
 - ```./Autoencoder experiments/Autoencoder_mri.ipynb ``` -- __Autoencoder__ on full size MRI images;
 - ```./GAN experiment/GAN_experiment_part1.ipynb ``` --  __GAN and Encoder__ on full size MRI images;
 - ```./GAN experiment/GAN_experiment_part2.ipynb ``` --  __Classifier__ on syntetic images;
-
-## Models
-
 
 ## Pretrained models
 
@@ -87,6 +85,8 @@ __On latent data:__
 ### __Full size MRI images__
 
 - __Autoencoder__ with bottleneck=1000;
+
+<img src="https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/mri_gender.png" alt="" width="580" height="480">
 
 - __Logistic Regression__ for gender and age labels:
 
