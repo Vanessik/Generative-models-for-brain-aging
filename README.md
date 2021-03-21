@@ -43,21 +43,42 @@ We work with __two types__ of data:
 - Full size MRI images;
 
 __MRI data__ could be downloaded from here https://drive.google.com/file/d/1vGPOyEaLsITt3xtjhPTAUV99-AvnCW6_/view and __labels for gender__ from https://drive.google.com/file/d/1u8gV_lzDYHKCim7F-7EHaSiNRVztKaQQ/view?usp=sharing.
-__MRI labels for age__ you could find in ./data/age.csv
-Preprocessed __morphometry data__ could be found in ./data/full_unrestricted.csv
+__MRI labels for age__ you could find in ```./data/age.csv```.
+Preprocessed __morphometry data__ could be found in ```./data/full_unrestricted.csv```.
 
 
 ## Results
 
 ### __Morphometry data__
 
-- __Logistic Regression__ for gender
+- __Autoencoder__ with bottlenck = 80;
 
-Logistic regression reached 93% accuracy on initial data and 86% accuracy on latent vectors, obtained after encoder with bottleneck 80;
+- __Logistic Regression__ for gender and age labels:
 
-- __Classifier__ for age
+Build LR classifier both on initial data and obtained after encoder bottleneck vectors for gender and age labels.
 
-Attach scores on cross validation
+| Label| Initial vectors | Bottlenck vectors |
+|----------------|:---------:|----------------:|
+| Gender | 0.919 | 0.856 |
+| Age| 0.47 | 0.465 |
+
+- __Cross validation__  on initial data and  bottleneck vectors for different models for age label:
+
+__On initial data:__
+
+| Method| Logistic Regression | Random Forest|K Nearest Neighbors| Decision Tree|
+|----------------|:---------:|---------:|---------:|----------:|
+| Multiclass | 0.475 | 0.479 |0.406|   0.408|
+| OneVsRest|0.476| 0.48 |0.394 |     0.379|
+| OneVsOne| 0.466 | 0.478 |0.4| 0.38 |
+
+__On latent data:__
+
+| Method| Logistic Regression | Random Forest|K Nearest Neighbors| Decision Tree|
+|----------------|:---------:|--------:|---------:|---------:|
+| Multiclass | 0.462 | 0.47 |0.396| 0.419|
+| OneVsRest|0.467| 0.466 |0.404 |  0.418 |
+| OneVsOne| 0.469 | 0.468 |0.4| 0.42 |
 
 - __PCA__ with number of components=2 works well for initial and obtained latent vectors for gender, but for age returns bad results;
 
@@ -65,13 +86,18 @@ Attach scores on cross validation
 
 ### __Full size MRI images__
 
-- __Autoencoder__ with bottleneck=1000
+- __Autoencoder__ with bottleneck=1000;
 
-- __Logistic Regression__ for gender
+- __Logistic Regression__ for gender and age labels:
 
-Logistic regression reached 93% accuracy on initial data, reshaped to 2D and 93% accuracy on latent vectors, obtained after encoder with bottleneck 1000;
+Logistic regression was trained on initial data, reshaped to 2D and on latent vectors, obtained after encoder with bottleneck 1000;
 
-- __Logistic Regression__ for age
+| Label| Initial vectors | Bottlenck vectors |
+|----------------|:---------:|----------------:|
+| Gender | 0.937 | 0.94|
+| Age| 0.439 | 0.439 |
+
+
       
 - __Generative adversarial model__ 
 
