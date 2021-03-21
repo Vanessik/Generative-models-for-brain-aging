@@ -1,7 +1,6 @@
 # Generative-models-for-brain-aging-and-gender-differences
-Project devoted to understanding healthy patterns of brain data, connected to gender and age.
 
-The main goal of this project is to explore brain with generative models and derive aging and gender patterns both on morphometry and full size MRI data. 
+The main goal of this project is to explore brain with generative models and derive healthy patterns of brain data, connected to gender and age both on morphometry and full size MRI data. 
 The motivation of this is to facilitate work of scientist with understanding which areas of brain have deviations and which - are the result of natural biological changes due to aging or  gender affiliation.
 
 ## Prerequisites
