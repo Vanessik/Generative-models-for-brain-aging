@@ -63,7 +63,19 @@ Logistic regression reached 93% accuracy on initial data, reshaped to 2D and 93%
 
 1b. Classification for age
 
+Generative adversarial model for full size images
 
+2a Trained GAN with 100 dimensional latent space. 
+
+Generated images and corresponding latent representations can be found by the following liks: https://drive.google.com/file/d/115XMMUh4U4OP_FB_cImRwVVDpzAikdh1/view?usp=sharing and  https://drive.google.com/file/d/115xUwUxlgzJahS53WxOzRH-_wDcOWDtn/view?usp=sharing 
+
+2b Trained encoder on generated data to fit latent representations of size 100.
+
+MSE on validation: 0.003 (std of generator's distribution approximately equals to 0.3)
+
+2c Classification for gender (more complex model)
+
+ResNet-like neural network reached 94.6% accuracy on validation without augmentation and 93% with augmentation by gaussian noise. However, classificators trained on neither augmented nor original dataset didn't show reasunable predictions for synthetic dataset. So, the continuation of the experiment was meaningless.
 
 
 
