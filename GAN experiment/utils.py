@@ -1,5 +1,7 @@
 import numpy as np
 import nibabel
+import torch
+import torch.utils.data as torch_data
 
 def plot_central_cuts(img, title=""):
     """
