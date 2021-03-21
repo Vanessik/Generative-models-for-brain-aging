@@ -113,7 +113,7 @@ MSE on validation: 0.003 (standard deviation of generator's distribution approxi
 
 - __Classification for gender__ (more complex model)
 
-ResNet-like neural network reached 94.6% accuracy on validation without augmentation and 93% with augmentation by gaussian noise. However, classificators trained on neither augmented nor original dataset didn't show reasunable predictions for synthetic dataset. So, the continuation of the experiment was meaningless.
+ResNet-like neural network reached 94.6% accuracy on validation without augmentation and 93% with augmentation by gaussian noise. However, classificators trained on neither augmented nor original dataset didn't show reasonable predictions for synthetic dataset. So, the continuation of the experiment was meaningless.
 
 
 
