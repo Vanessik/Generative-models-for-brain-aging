@@ -33,7 +33,7 @@ Google Colab GPU is enough to run each experiment. Main prerequisites are:
 
 ## Data
 
-In this project we use HCP data from https://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release.
+In this project we use Humman Connectome Project data from [HCP site](https://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release).
 
 We work with __two types__ of data:
 
