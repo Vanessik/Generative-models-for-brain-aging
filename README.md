@@ -40,7 +40,7 @@ We work with __two types__ of data:
 - Morphometric low dimensional data;
 - Full size MRI images;
 
-__MRI data__ could be downloaded from here https://drive.google.com/file/d/1vGPOyEaLsITt3xtjhPTAUV99-AvnCW6_/view and __labels for gender__ from https://drive.google.com/file/d/1u8gV_lzDYHKCim7F-7EHaSiNRVztKaQQ/view?usp=sharing.
+__MRI data__ could be downloaded from [here](https://drive.google.com/file/d/1vGPOyEaLsITt3xtjhPTAUV99-AvnCW6_/view) and __labels for gender__ from [here](https://drive.google.com/file/d/1u8gV_lzDYHKCim7F-7EHaSiNRVztKaQQ/view?usp=sharing).
 __MRI labels for age__ you could find in ```./data/age.csv```.
 Preprocessed __morphometry data__ could be found in ```./data/full_unrestricted.csv```.
 
@@ -110,7 +110,7 @@ Logistic regression was trained on initial data, reshaped to 2D and on latent ve
 
 ![Alt-текст](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/GAN_fake_slices.png "Generated brains")
 
-Generated images and corresponding latent representations can be found by the following links: https://drive.google.com/file/d/115XMMUh4U4OP_FB_cImRwVVDpzAikdh1/view?usp=sharing and https://drive.google.com/file/d/115xUwUxlgzJahS53WxOzRH-_wDcOWDtn/view?usp=sharing
+Generated images and corresponding latent representations can be found by the following links: [images](https://drive.google.com/file/d/115XMMUh4U4OP_FB_cImRwVVDpzAikdh1/view?usp=sharing) and [latent](https://drive.google.com/file/d/115xUwUxlgzJahS53WxOzRH-_wDcOWDtn/view?usp=sharing)
 
 
 - __Encoder__ on generated data to fit latent representations of size 100.
