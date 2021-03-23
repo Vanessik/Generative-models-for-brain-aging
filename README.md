@@ -17,6 +17,7 @@ https://github.com/razvanmarinescu/brain-coloring
 
 - ```./Autoencoder experiments/Autoencoder_morph.ipynb ``` -- __Autoencoder__ on morphometry data;
 - ```./Autoencoder experiments/Autoencoder_mri.ipynb ``` -- __Autoencoder__ on full size MRI images;
+- ```./Autoencoder experiments/BrainPainterVizualisation.ipynb ``` -- BrainPainter vizualisation on morphometry data;
 - ```./GAN experiment/GAN_experiment_part1.ipynb ``` --  __GAN and Encoder__ on full size MRI images;
 - ```./GAN experiment/GAN_experiment_part2.ipynb ``` --  __Classifier__ on syntetic images;
 
@@ -80,7 +81,7 @@ __On latent data:__
 - __PCA__ with number of components=2 works well for initial and obtained latent vectors for gender, but for age returns bad results;
 
 Average male cortical inner right hemisphere   |  Average female cortical inner right hemisphere 
-:---------------------------------------------:|:-----------------------------------------------:
+:---------------:|:--------------:
 ![](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/cortical-inner-right-hemisphere_Male.png)  |  ![](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/cortical-inner-right-hemisphere_Fale.png)
 
 Average 22-25 y.o. brain (top view)  |  Average 26-30 y.o. brain (top view)  |  Average 31+ y.o. brain (top view)
