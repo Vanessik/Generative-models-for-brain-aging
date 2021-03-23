@@ -82,7 +82,7 @@ __On latent data:__
 
 Average male cortical inner right hemisphere   |  Average female cortical inner right hemisphere 
 :---------------:|:--------------:
-![](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/cortical-inner-right-hemisphere_Male.png)  |  ![](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/cortical-inner-right-hemisphere_Fale.png)
+![](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/cortical-inner-right-hemisphere_Male.png)  |  ![](https://github.com/Vanessik/Generative-models-for-brain-aging/blob/master/imgs/cortical-inner-right-hemisphere_Female.png)
 
 Average 22-25 y.o. brain (top view)  |  Average 26-30 y.o. brain (top view)  |  Average 31+ y.o. brain (top view)
 :-----------------------------------:|:-------------------------------------:|:----------------------------------:
