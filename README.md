@@ -7,10 +7,10 @@ The motivation of this is to facilitate work of scientist with understanding whi
 
 Google Colab GPU is enough to run each experiment. Main prerequisites are:
 
-1. pytorch
-2. CUDA
-3. BrainPainter 
-https://github.com/razvanmarinescu/brain-coloring
+1. [Pytorch](https://pytorch.org/)
+2. [CUDA](https://developer.nvidia.com/cuda-downloads)
+3. [BrainPainter](https://github.com/razvanmarinescu/brain-coloring)
+
 
 
 ## Experiments
